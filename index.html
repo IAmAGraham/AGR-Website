@@ -9,9 +9,10 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-        <link rel="stylesheet" href="css/main.css"/>
+
         <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+        <link rel="stylesheet" href="css/main.css"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -23,49 +24,56 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+
         <!-- Add your site or application content here -->
-        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="#">Andrea Graham-Ryan</a>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <header>
+        <div id="logo" class="menuUp">
+            <h1>Andrea Graham-Ryan</h1>
+          <div id="navToggle"><a href="#">Menu</a></div>
+        </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Home </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+              <li>
+                <a href="#about">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
+              <li>
+                <a href="#portfolio">Portfolio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+              <li>
+                <a href="#contact">Contact</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#mysandbox">My Sandbox</a>
+              <li>
+                <a href="#mysandbox">My Sandbox</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://medium.com/@andrea.g.r">//Blog</a>
+              <li>
+                <a href="https://medium.com/@andrea.g.r">//Blog</a>
               </li>
             </ul>
-          </div>
-        </nav>
+          </nav>
+
+      </header>
 
 
 
 
+<div class="parallax" id="home">
+
+</div>
 
 
 
         <!-- Content to slide in Parallax Effect -->
+
     <div id="bg-3-1">
       <div id="about">
         <div class="content">
             <h2>About</h2>
-          <div id="divider"> </div>
+          <div id="divider">
             <h3>Hey, I'm Andrea</h3>
+          </div>
           <div id="about1"><p>And I’m a big believer in taking risks. I deem that “putting yourself out there” and challenging yourself is the only way to maintain a pulse. I strongly believe that success is when luck meets preparation and there’s no better feeling than when the two become acquainted. Ever since preschool (when my favorite color was orange because everyone else liked blue) I have found that a unique spirit is
 essential to my character and imperative to my personal identity.</p></div>
           <div id="about2"><p>I am Chicago-born, Pittsburgh-raised and a New York native. I strive to intersect passion and purpose, because that is the true formula for happiness. I firmly believe that technology is our entire future which is why I traded in my wealth management suit for a developer hoodie and I aim to mash to two together ( I guess into a sweatsuit). My wit and charm will add a pun to any conversation and my “in the moment” personality makes everything my passion project.</p></div>
@@ -94,28 +102,32 @@ essential to my character and imperative to my personal identity.</p></div>
      </div>
    </div>
 
-   <div id="bg-3-3"></div>
+   <div id="bg-3-3">
      <div id="contact">
        <div class="container">
          <h2>Contact</h2>
-         <form id="contact" action="" method="post">
+         <form id="contact" action="index.php" method="post">
+           <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
            <h3>Drop me a note</h3>
            <fieldset>
-             <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+             <input name="name" placeholder="Your name" type="text" tabindex="1" required autofocus>
            </fieldset>
            <fieldset>
-             <input placeholder="Your Email Address" type="email" tabindex="2" required>
+             <input name="email" placeholder="Your Email Address" type="email" tabindex="2" required>
            </fieldset>
            <fieldset>
-             <textarea placeholder="Type your message here..." tabindex="3" required></textarea>
+             <textarea name="message" placeholder="Type your message here..." tabindex="3" required></textarea>
            </fieldset>
+           <label>*What is 2+2? (Anti-spam)</label>
+            <input name="human" placeholder="Type Here">
           <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            <button name="submit" type="submit" value="Submit" id="contact-submit" data-submit="...Sending">Submit</button>
           </fieldset>
         </form>
        </div>
      </div>
-   </div>
+    </div>
+
 
    <div id="bg-3-4">
      <div id="mysandbox">
@@ -129,7 +141,10 @@ essential to my character and imperative to my personal identity.</p></div>
    </div>
 
 
+
+
  <div id="copyright"><a href="https://andreagrahamryan.com/">Copyright AndreaGrahamRyan.com </a></div>
+</div>
 
  <!--- SLIDES END --->
 

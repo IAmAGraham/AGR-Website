@@ -19,7 +19,6 @@
      display: flex;
      flex-direction: column;
      text-align: center;
-     z-index: 1;
  }
 
 header > div#logo {
@@ -46,7 +45,7 @@ header > div#logo > h1 {
      position: absolute;
      right: 0;
      top: 0;
-
+     transition: 300ms all ease;
  }
 
  header > div#logo > div#navToggle:hover {
@@ -58,6 +57,7 @@ header > div#logo > h1 {
      display: block;
      font-size: 0.85em;
      font-weight: 600;
+     padding: 0 2.5rem;
      text-decoration: none;
      transition: 300ms all ease;
  }
@@ -122,7 +122,7 @@ overflow: hidden;
 position: absolute;
 right: 5%;
 width: 90%;
-z-index: 1;
+z-index: 100;
 }
 
 header > nav > ul > li > nav > ul > li > a {
@@ -144,6 +144,7 @@ display: none;
 header {
 background-color: white;
 flex-direction: row;
+line-height: 90px;
 padding: 0 3rem;
 position: fixed;
 text-align: left;
@@ -272,7 +273,6 @@ width: 196px;
    	background:#F9F9F9;
    	padding:25px;
    	margin:50px 0;
-    z-index: 4;
    }
 
    #contact h3 {
@@ -356,39 +356,6 @@ width: 196px;
 
 
  /* ==========================================================================
-    Site content
-    ========================================================================== */
-.divider{
-  padding-left: 40px;
-  z-index: 1;
-}
-
-#about1 {
-  padding-left: 40px;
-  padding-right: 40px;
-  z-index: 1;
-}
-#about2 {
-  padding-left: 40px;
-  padding-right: 40px;
-  z-index: 1;
-}
-#about3 {
-  padding-left: 40px;
-  padding-right: 40px;
-  z-index: 1;
-}
-#about4 {
-  padding-left: 40px;
-  padding-right: 40px;
-  z-index: 1;
-}
-#about {
-  padding-left: 40px;
-  padding-bottom: 100px;
-  z-index: 1;
-}
- /* ==========================================================================
     Parallax Clouds
     ========================================================================== */
 
@@ -401,7 +368,7 @@ div#parallax-bg-2{
 	top: 0;
 	left: 50%;
 	margin-left: -600px;
-	z-index: 3;
+	z-index: 2;
 }
 /* background layer */
 div#parallax-bg-3{
@@ -410,7 +377,7 @@ div#parallax-bg-3{
 	top: 0;
 	left: 50%;
 	margin-left: -470px;
-	z-index: 4;
+	z-index: 3;
 }
 
 /* foreground (content)*/
@@ -420,7 +387,7 @@ div#parallax-bg-1{
 	top: 0;
 	left: 50%;
 	margin-left: -600px;
-	z-index: 2;
+	z-index: 1;
 }
 
 /* foreground */
